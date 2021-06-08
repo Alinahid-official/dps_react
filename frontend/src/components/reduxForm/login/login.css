@@ -1,0 +1,29 @@
+ .box{
+   position: relative;
+    margin:4% 0;
+ }
+.form{
+   
+  
+  transform:translate(40%,0);
+  width: 55%;
+  padding: 6% 0 ;
+  border:1px solid rgba(128, 128, 128, 0.274);
+  box-shadow:0 0 8px #c9c2c2;
+  border-radius: 10px;
+}
+  .fa-user-circle{
+    padding-bottom: 12%;
+  }
+  @media screen and (max-width: 768px){
+   .form{
+    width:50%;
+   }  
+    
+}
+@media screen and (max-width: 426px){
+  .form{
+   width:80%;
+  }  
+   
+}

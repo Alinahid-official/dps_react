@@ -1,0 +1,10 @@
+@media screen and (max-width: 1145px) {
+    .small_bg_image{
+        text-align: center;
+      padding:15px 0;
+    }
+    .small_bg_image img{
+        height: 80px;
+        width:auto;
+    }
+}

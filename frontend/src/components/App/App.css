@@ -1,0 +1,224 @@
+/* <-------margins------->  */
+.mg-10{
+    margin:0 10px;
+}
+.mg-t-50{
+    margin-top:50px;
+}
+.mg-tb-50{
+    margin: 50px 0;
+}
+.mg-r-10{
+    margin-right: 10px;
+}
+/* <-------links------->  */
+ a:link,
+ a:visited{
+   text-decoration: none;
+   
+}
+.simple-link:link,
+.simple-link:visited{
+    color: #fff;
+}
+/* <-------icons------->  */
+i{
+    padding:0 5px;
+}
+/* <-------text aligns------->  */
+.align-left{
+    text-align:left
+}
+.align-right{
+    text-align:right
+}
+.align-center{
+    text-align:center
+}
+
+@media only screen and (max-width: 480px){
+    .align-left{
+        text-align:center
+    }
+    .align-right{
+        text-align:center
+    }
+    .align-center{
+        text-align:center
+    }
+}
+.bottom{
+    position:absolute;
+    bottom: 10px;
+}
+/* <-------colors------->  */
+.color-y{
+    color: #B1AD0C;
+}
+/* <-------Animations------->  */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+ul{
+    padding-inline-start: 0;
+}
+/* <-------Buttons------->  */
+.btn:link,
+.btn:visited{
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+@media screen and (max-width: 600px){
+    .btn:link,
+.btn:visited{
+    padding: 4px 8px;
+    border-radius: 50px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+}
+.btn_trans:link,
+.btn_trans:visited{
+    border: 2px solid rgba(255, 255, 255, 0.726);
+    color: #fff;
+     
+}
+.btn_trans:hover,
+.btn_trans:active{
+    background-color: #fff;
+    color: #398463;
+     
+}
+.btn_solid:link,
+.btn_solid:visited{
+    background-color: rgba(255, 255, 255, 0.781);
+    color: #398463;
+}
+.btn_solid:active,
+.btn_solid:hover{
+    background-color: #fff;
+}
+.btn_trans_green:link,
+.btn_trans_green:visited{
+    border: 2px solid #398463;
+    color:#398463;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.btn_trans_green:active,
+.btn_trans_green:hover{
+    background-color:#398463 ;
+    color: #fff;
+}
+/* <-------Forms------->  */
+.field{
+    margin-bottom: 20px;
+}
+ .error{
+   border:1px solid red;
+   box-shadow: 0 0 5px rgba(238, 81, 94, 0.699);
+
+ }
+.input {
+   width:70%;
+   height:40px;
+   transition:all 0.2s;
+    outline: none;
+    padding: 1% 2%;
+    border: 1px solid #DDDDDD;
+    border-radius:5px;
+  }
+  .input:focus,.input:active {
+    box-shadow: 0 0 5px #4bb386;
+    padding: 1% 2%;
+    border: 1px solid #4bb386;
+    border-radius:5px;
+  }
+ .input:focus + label:before {
+    color: #398463;
+  }
+  .input + label:before {
+    transition:all 0.2s;
+   position: relative;
+   left:20%;
+    width:fit-content;
+     margin-top: -30px;
+    content: attr(placeholder);
+    display: block;	
+    pointer-events: none;
+    line-height: 1.25em;
+    color:#DDDDDD;
+   
+  }
+  .input:focus + label:before,.input.active + label:before,.input:valid + label:before {
+    background: white;
+    padding: 0 1.5px;
+    color:#398463;
+    transform: translateY(calc((-1em - 0.5em) - 0.5px)) ;
+  }
+   
+  .show1{
+    width: fit-content;
+    display: block;
+    position:relative;
+    color:rgb(236, 33, 50);
+   left:75%;
+   top:15px;
+   margin-top: -32px;
+    font-size: 20px;
+  }
+  .hide1{
+    display: none;
+  }
+  .span{
+ 
+   position: relative;
+   top:15px;
+    margin-top: -15px;
+    color: red;
+    font-family: roboto;
+    font-weight: bold;
+  }
+.file{
+    width: fit-content;
+}
